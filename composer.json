@@ -1,0 +1,21 @@
+{
+    "name": "subbysnake/rrmdir",
+    "description": "Recursively removes a directory.",
+    "keywords": ["php", "rmdir", "recursive", "directory", "remove"],
+    "type": "package",
+    "license": "MIT",
+    "homepage": "https://github.com/subbysnake/rrmdir",
+    "authors": [
+        {
+            "name": "Szabolcs Surányi",
+            "email": "szabolcs.suranyi@shadesoft.hu",
+            "homepage": "http://shadesoft.hu"
+        }
+    ],
+    "autoload": {
+        "files": ["rrmdir.php"]
+    },
+    "require": {
+        "php": ">=5.3"
+    }
+}
