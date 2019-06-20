@@ -1,10 +1,10 @@
 {
-    "name": "subbysnake/rrmdir",
+    "name": "d3vy/rrmdir",
     "description": "Recursively removes a directory.",
     "keywords": ["php", "rmdir", "recursive", "directory", "remove"],
     "type": "package",
     "license": "MIT",
-    "homepage": "https://github.com/subbysnake/rrmdir",
+    "homepage": "https://github.com/d3vy/rrmdir",
     "authors": [
         {
             "name": "Szabolcs Surányi",
