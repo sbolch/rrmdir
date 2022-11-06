@@ -1,15 +1,15 @@
 {
-    "name": "d3vy/rrmdir",
+    "name": "sbolch/rrmdir",
     "description": "Recursively removes a directory.",
     "keywords": ["php", "rmdir", "recursive", "directory", "remove"],
     "type": "package",
     "license": "MIT",
-    "homepage": "https://github.com/d3vy/rrmdir",
+    "homepage": "https://github.com/sbolch/rrmdir",
     "authors": [
         {
             "name": "Szabolcs Surányi",
             "email": "szabolcs.suranyi@shadesoft.hu",
-            "homepage": "http://shadesoft.hu"
+            "homepage": "https://shadesoft.dev"
         }
     ],
     "autoload": {
