@@ -1,17 +1,22 @@
 <?php
 
-function rrmdir(string $dir): void {
-    if(is_dir($dir)) {
-        $objects = scandir($dir);
-        foreach($objects as $object) {
-            if($object != '.' && $object != '..') {
-                if(is_dir("$dir/$object")) {
-                    rrmdir("$dir/$object");
-                } else {
-                    unlink("$dir/$object");
-                }
-            }
-        }
-        rmdir($dir);
+/**
+ * Recursively removes a directory
+ * @param string $directory Path to the directory
+ * @return void
+ */
+function rrmdir(string $directory): void {
+    if (!is_dir($directory)) {
+        return;
     }
+
+    foreach (new FilesystemIterator($directory, FilesystemIterator::SKIP_DOTS) as $item) {
+        if ($item->isDir()) {
+            rrmdir($item->getPathname());
+        } else {
+            unlink($item->getPathname());
+        }
+    }
+
+    rmdir($directory);
 }
