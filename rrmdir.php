@@ -1,9 +1,6 @@
 <?php
 
-/**
- * @return void
- */
-function rrmdir(string $dir) {
+function rrmdir(string $dir): void {
     if(is_dir($dir)) {
         $objects = scandir($dir);
         foreach($objects as $object) {
