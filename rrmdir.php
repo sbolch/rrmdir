@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @param string $dir
+ * @return void
+ */
 function rrmdir($dir) {
     if(is_dir($dir)) {
         $objects = scandir($dir);
