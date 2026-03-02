@@ -2,7 +2,6 @@
     "name": "sbolch/rrmdir",
     "description": "Recursively removes a directory.",
     "keywords": ["php", "rmdir", "recursive", "directory", "remove"],
-    "type": "package",
     "license": "MIT",
     "homepage": "https://github.com/sbolch/rrmdir",
     "authors": [
